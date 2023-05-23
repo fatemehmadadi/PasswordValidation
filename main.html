@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>jQuery</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <form>
+          <label for="password">Password</label><br />
+          <input type="password" id="password" placeholder="••••••••" />
+          <button type="button" class="password-view">
+            <i class="fa-sharp fa-solid fa-eye-slash"></i>
+          </button>
+        </form>
+        <ul class="validation-password">
+          <li validation="false" class="characters-val">
+            <i class="fa-sharp fa-solid fa-xmark red"></i>
+            <span>Contains 8 characters</span>
+          </li>
+          <li validation="false" class="upper-val">
+            <i class="fa-sharp fa-solid fa-xmark red"></i>
+            <span>Include uppercase characters</span>
+          </li>
+          <li validation="false" class="lower-val">
+            <i class="fa-sharp fa-solid fa-xmark red"></i>
+            <span>Contains lowercase characters</span>
+          </li>
+          <li validation="false" class="number-val">
+            <i class="fa-sharp fa-solid fa-xmark red"></i>
+            <span>include Number</span>
+          </li>
+        </ul>
+        <div class="slide-box">
+          <span class="slide-3 slide"></span>
+          <span class="slide-2 slide"></span>
+          <span class="slide-1 slide"></span>
+          <span class="slide-0 slide"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/jquery/jquery.js"></script>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
